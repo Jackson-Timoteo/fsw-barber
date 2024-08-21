@@ -9,7 +9,7 @@ import { Avatar, AvatarImage } from "./_components/ui/avatar"
 
 const Home = () => {
   return (
-    <div className="">
+    <div>
       <Header />
       <div className="p-5">
         <h2 className="text-xl font-bold">Olá! Jackson</h2>
@@ -22,11 +22,21 @@ const Home = () => {
           </Button>
         </div>
 
-        <div className="relative mt-6 h-[150px] w-full rounded-xl">
-          <Image src="/Banner.png" alt="banner" fill className="object-cover" />
+        <div className="relative mt-6 h-[150px] w-full">
+          <Image
+            src="/Banner.png"
+            alt="banner"
+            fill
+            className="rounded-xl object-cover"
+          />
         </div>
 
-        <Card className="mt-6">
+        {/* Agendamentos */}
+
+        <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
+          Agendamentos
+        </h2>
+        <Card>
           <CardContent className="flex justify-between p-0">
             <div className="flex flex-col gap-2 py-5 pl-5">
               <Badge className="w-fit">Confirmado</Badge>
